@@ -1,0 +1,12 @@
+__pycache__/
+.pycache/
+.DS_Store
+.ipynb_checkpoints/
+.venv/
+
+data/raw/*
+!data/raw/.gitkeep
+data/processed/
+reports/figures/
+submissions/*.csv
+!submissions/.gitkeep
