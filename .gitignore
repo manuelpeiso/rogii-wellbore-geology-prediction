@@ -10,6 +10,7 @@ data/raw/*
 data/processed/
 data/processed_v2/
 data/processed_v3/
+data/processed_v4/
 reports/figures/
 submissions/*.csv
 !submissions/.gitkeep

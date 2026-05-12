@@ -1,0 +1,13 @@
+{
+  "id": "mannypeiso/rogii-lightgbm-v4",
+  "title": "ROGII LightGBM V4",
+  "code_file": "lightgbm_v4.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "competition_sources": [
+    "rogii-wellbore-geology-prediction"
+  ]
+}
