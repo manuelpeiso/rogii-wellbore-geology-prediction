@@ -1,0 +1,3 @@
+model_type,max_train_rows,model_rmse,baseline_rmse,n_valid_rows,n_valid_wells
+random_forest,500000,28.91012558056201,82.50486875044429,477484.0,93.0
+hist_gradient_boosting,500000,31.914516344207318,82.50486875044429,477484.0,93.0

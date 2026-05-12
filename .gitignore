@@ -11,3 +11,6 @@ data/processed/
 reports/figures/
 submissions/*.csv
 !submissions/.gitkeep
+models/*.joblib
+!models/.gitkeep
+reports/model_results_smoke.csv
