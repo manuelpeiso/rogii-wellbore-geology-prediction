@@ -1,46 +1,41 @@
-[{"stream_name":"stderr","time":8.061675723,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
-,{"stream_name":"stderr","time":8.06178259,"data":"  validate(nb)\n"}
-,{"stream_name":"stderr","time":9.373899665,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
-,{"stream_name":"stderr","time":9.373936299,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
-,{"stream_name":"stderr","time":9.373942469,"data":"0.00s - to python to disable frozen modules.\n"}
-,{"stream_name":"stderr","time":9.373946754,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
-,{"stream_name":"stderr","time":10.21156916,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
-,{"stream_name":"stderr","time":10.211608059,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
-,{"stream_name":"stderr","time":10.211613542,"data":"0.00s - to python to disable frozen modules.\n"}
-,{"stream_name":"stderr","time":10.211618917,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
-,{"stream_name":"stderr","time":19.880689604,"data":"Traceback (most recent call last):\n"}
-,{"stream_name":"stderr","time":19.880758458,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
-,{"stream_name":"stderr","time":19.880772192,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
-,{"stream_name":"stderr","time":19.880782572,"data":"    raise_for_execution_errors(nb, output_path)\n"}
-,{"stream_name":"stderr","time":19.88096169,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
-,{"stream_name":"stderr","time":19.880994536,"data":"    raise error\n"}
-,{"stream_name":"stderr","time":19.881345684,"data":"papermill.exceptions.PapermillExecutionError: \n"}
-,{"stream_name":"stderr","time":19.88136787,"data":"---------------------------------------------------------------------------\n"}
-,{"stream_name":"stderr","time":19.881376405,"data":"Exception encountered at \"In [1]\":\n"}
-,{"stream_name":"stderr","time":19.881383424,"data":"---------------------------------------------------------------------------\n"}
-,{"stream_name":"stderr","time":19.881389983,"data":"FileNotFoundError                         Traceback (most recent call last)\n"}
-,{"stream_name":"stderr","time":19.881395839,"data":"/tmp/ipykernel_16/2844427790.py in \u003ccell line: 0\u003e()\n"}
-,{"stream_name":"stderr","time":19.881401707,"data":"     27 \n"}
-,{"stream_name":"stderr","time":19.881406764,"data":"     28 if Path('/kaggle/working').exists():\n"}
-,{"stream_name":"stderr","time":19.8814119,"data":"---\u003e 29     RAW_DIR = find_kaggle_raw_dir()\n"}
-,{"stream_name":"stderr","time":19.881417241,"data":"     30     OUTPUT_PATH = Path('/kaggle/working/submission.csv')\n"}
-,{"stream_name":"stderr","time":19.881422585,"data":"     31 else:\n"}
-,{"stream_name":"stderr","time":19.881427724,"data":"\n"}
-,{"stream_name":"stderr","time":19.881432693,"data":"/tmp/ipykernel_16/2844427790.py in find_kaggle_raw_dir()\n"}
-,{"stream_name":"stderr","time":19.881437989,"data":"     24             return candidate\n"}
-,{"stream_name":"stderr","time":19.881480022,"data":"     25     available = sorted(str(path) for path in input_root.glob('*')) if input_root.exists() else []\n"}
-,{"stream_name":"stderr","time":19.881486664,"data":"---\u003e 26     raise FileNotFoundError(f'Could not find Kaggle raw data under /kaggle/input. Available: {available}')\n"}
-,{"stream_name":"stderr","time":19.88149193,"data":"     27 \n"}
-,{"stream_name":"stderr","time":19.881495684,"data":"     28 if Path('/kaggle/working').exists():\n"}
-,{"stream_name":"stderr","time":19.881507735,"data":"\n"}
-,{"stream_name":"stderr","time":19.881511612,"data":"FileNotFoundError: Could not find Kaggle raw data under /kaggle/input. Available: ['/kaggle/input/competitions']\n"}
-,{"stream_name":"stderr","time":19.881516022,"data":"\n"}
-,{"stream_name":"stderr","time":22.798371435,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
-,{"stream_name":"stderr","time":22.798417125,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
-,{"stream_name":"stderr","time":23.016399668,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
-,{"stream_name":"stderr","time":23.016431907,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
-,{"stream_name":"stderr","time":23.859069659,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
-,{"stream_name":"stderr","time":24.246406272,"data":"[NbConvertApp] Writing 19134 bytes to __notebook__.ipynb\n"}
-,{"stream_name":"stderr","time":27.433912602,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
-,{"stream_name":"stderr","time":28.567558955,"data":"[NbConvertApp] Writing 339838 bytes to __results__.html\n"}
+[{"stream_name":"stderr","time":7.662776974,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.66286747,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":8.956404216,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.956438762,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.956444611,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.956448759,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.776469432,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.776505637,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.776511021,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.776515708,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":19.589935136,"data":"Using RAW_DIR=/kaggle/input/competitions/rogii-wellbore-geology-prediction\n"}
+,{"stream_name":"stdout","time":19.590014958,"data":"Using OUTPUT_PATH=/kaggle/working/submission.csv\n"}
+,{"stream_name":"stdout","time":19.590025591,"data":"Building features...\n"}
+,{"stream_name":"stdout","time":103.737609186,"data":"Train prediction rows: 3783989\n"}
+,{"stream_name":"stdout","time":103.737650768,"data":"Test prediction rows: 14151\n"}
+,{"stream_name":"stdout","time":105.34428349,"data":"Train rows used: 3000000\n"}
+,{"stream_name":"stdout","time":105.344325689,"data":"Validation rows: 477484\n"}
+,{"stream_name":"stdout","time":105.344339822,"data":"Validation wells: 93\n"}
+,{"stream_name":"stdout","time":109.368930582,"data":"[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.591127 seconds.\n"}
+,{"stream_name":"stdout","time":109.369125496,"data":"You can set `force_col_wise=true` to remove the overhead.\n"}
+,{"stream_name":"stdout","time":109.369713724,"data":"[LightGBM] [Info] Total Bins 7926\n"}
+,{"stream_name":"stdout","time":109.369724489,"data":"[LightGBM] [Info] Number of data points in the train set: 3000000, number of used features: 33\n"}
+,{"stream_name":"stdout","time":109.369729592,"data":"[LightGBM] [Info] Start training from score 11543.776592\n"}
+,{"stream_name":"stdout","time":335.151105508,"data":"CV model RMSE: 19.644060769913725\n"}
+,{"stream_name":"stdout","time":335.151265144,"data":"CV baseline RMSE: 82.50486875044429\n"}
+,{"stream_name":"stdout","time":335.670627421,"data":"Wrote /kaggle/working/submission.csv\n"}
+,{"stream_name":"stdout","time":335.670666422,"data":"              id          tvt\n"}
+,{"stream_name":"stdout","time":335.670672859,"data":"0  000d7d20_1442  11747.81605\n"}
+,{"stream_name":"stdout","time":335.670677839,"data":"1  000d7d20_1443  11747.81605\n"}
+,{"stream_name":"stdout","time":335.67068255,"data":"2  000d7d20_1444  11747.81605\n"}
+,{"stream_name":"stdout","time":335.670686293,"data":"3  000d7d20_1445  11747.81605\n"}
+,{"stream_name":"stdout","time":335.67068946,"data":"4  000d7d20_1446  11747.85803\n"}
+,{"stream_name":"stderr","time":339.725929426,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":339.725971427,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":339.929859004,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":339.929887532,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":340.730991784,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":341.164999381,"data":"[NbConvertApp] Writing 17105 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":344.290644997,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":345.394844151,"data":"[NbConvertApp] Writing 337897 bytes to __results__.html\n"}
 ]
