@@ -1,0 +1,3 @@
+model_type,max_train_rows,model_rmse,baseline_rmse,n_valid_rows,n_valid_wells,n_train_rows,feature_set
+lightgbm_v3,3000000,20.3696402678173,82.50486875044429,477484.0,93.0,3000000.0,v3
+catboost_v3,3000000,21.40169731682472,82.50486875044429,477484.0,93.0,3000000.0,v3
