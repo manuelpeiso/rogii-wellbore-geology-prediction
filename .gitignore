@@ -6,11 +6,7 @@ __pycache__/
 .matplotlib/
 
 data/raw/*
-!data/raw/.gitkeep
-data/processed/
-data/processed_v2/
-data/processed_v3/
-data/processed_v4/
+data/
 reports/figures/
 submissions/*.csv
 !submissions/.gitkeep

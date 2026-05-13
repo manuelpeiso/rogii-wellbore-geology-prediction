@@ -1,0 +1,53 @@
+Model type          : lightgbm
+Validation wells    : 44
+Test wells excluded : ['000d7d20', '00bbac68', '00e12e8b']
+Train rows used  : 996,490
+Validation rows  : 197,466
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.010364 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 15424
+[LightGBM] [Info] Number of data points in the train set: 996490, number of used features: 65
+[LightGBM] [Info] Start training from score 11557.496945
+Training until validation scores don't improve for 500 rounds
+[100]	valid_0's l2: 3533.4
+[200]	valid_0's l2: 698.439
+[300]	valid_0's l2: 689.046
+[400]	valid_0's l2: 684.6
+[500]	valid_0's l2: 681.563
+[600]	valid_0's l2: 679.956
+[700]	valid_0's l2: 679.967
+[800]	valid_0's l2: 679.874
+[900]	valid_0's l2: 680.581
+[1000]	valid_0's l2: 680.858
+[1100]	valid_0's l2: 680.903
+[1200]	valid_0's l2: 680.665
+Early stopping, best iteration is:
+[756]	valid_0's l2: 679.796
+Metrics:
+  model_rmse: 26.0729
+  baseline_rmse: 69.1222
+  n_valid_rows: 197466.0000
+  n_valid_wells: 44.0000
+  n_train_rows: 996490.0000
+Wrote model to models/lightgbm_v5_3000k.joblib
+Traceback (most recent call last):
+  File "/Users/peiso/Documents/AI/Kaggle/rogii-wellbore-geology-prediction/src/train_model_v5.py", line 358, in <module>
+    main()
+  File "/Users/peiso/Documents/AI/Kaggle/rogii-wellbore-geology-prediction/src/train_model_v5.py", line 350, in main
+    write_submission(model, test_path, sample_path, submission_output)
+  File "/Users/peiso/Documents/AI/Kaggle/rogii-wellbore-geology-prediction/src/train_model_v5.py", line 247, in write_submission
+    test = pd.read_csv(test_features_path, usecols=META_COLUMNS + FEATURE_COLUMNS)
+  File "/Users/peiso/Documents/AI/Kaggle/rogii-wellbore-geology-prediction/.venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/peiso/Documents/AI/Kaggle/rogii-wellbore-geology-prediction/.venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/peiso/Documents/AI/Kaggle/rogii-wellbore-geology-prediction/.venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/Users/peiso/Documents/AI/Kaggle/rogii-wellbore-geology-prediction/.venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+  File "/Users/peiso/Documents/AI/Kaggle/rogii-wellbore-geology-prediction/.venv/lib/python3.9/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 140, in __init__
+    self._validate_usecols_names(usecols, self.orig_names)
+  File "/Users/peiso/Documents/AI/Kaggle/rogii-wellbore-geology-prediction/.venv/lib/python3.9/site-packages/pandas/io/parsers/base_parser.py", line 988, in _validate_usecols_names
+    raise ValueError(
+ValueError: Usecols do not match columns, columns expected but not found: ['best_match_tvt_vs_baseline', 'best_match_window_mse', 'lateral_mse_advantage', 'best_match_tvt_by_gr_window', 'best_match_is_lateral']

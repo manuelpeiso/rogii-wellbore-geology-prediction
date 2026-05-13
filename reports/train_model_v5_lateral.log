@@ -1,0 +1,103 @@
+Model type          : lightgbm
+Validation wells    : 154
+Test wells excluded : ['000d7d20', '00bbac68', '00e12e8b']
+Train rows used  : 3,000,000
+Validation rows  : 755,491
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.027210 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 14816
+[LightGBM] [Info] Number of data points in the train set: 3000000, number of used features: 60
+[LightGBM] [Info] Start training from score 11548.939297
+Training until validation scores don't improve for 500 rounds
+[100]	valid_0's l2: 2897.69
+[200]	valid_0's l2: 323.932
+[300]	valid_0's l2: 310.786
+[400]	valid_0's l2: 305.169
+[500]	valid_0's l2: 302.392
+[600]	valid_0's l2: 300.871
+[700]	valid_0's l2: 300.44
+[800]	valid_0's l2: 299.807
+[900]	valid_0's l2: 298.997
+[1000]	valid_0's l2: 298.798
+[1100]	valid_0's l2: 298.458
+[1200]	valid_0's l2: 297.628
+[1300]	valid_0's l2: 297.096
+[1400]	valid_0's l2: 296.48
+[1500]	valid_0's l2: 295.829
+[1600]	valid_0's l2: 295.429
+[1700]	valid_0's l2: 295.04
+[1800]	valid_0's l2: 294.736
+[1900]	valid_0's l2: 294.447
+[2000]	valid_0's l2: 293.828
+[2100]	valid_0's l2: 293.545
+[2200]	valid_0's l2: 293.174
+[2300]	valid_0's l2: 292.824
+[2400]	valid_0's l2: 292.596
+[2500]	valid_0's l2: 292.338
+[2600]	valid_0's l2: 292.209
+[2700]	valid_0's l2: 292.205
+[2800]	valid_0's l2: 292.043
+[2900]	valid_0's l2: 291.881
+[3000]	valid_0's l2: 291.752
+[3100]	valid_0's l2: 291.65
+[3200]	valid_0's l2: 291.542
+[3300]	valid_0's l2: 291.593
+[3400]	valid_0's l2: 291.494
+[3500]	valid_0's l2: 291.417
+[3600]	valid_0's l2: 291.383
+[3700]	valid_0's l2: 291.314
+[3800]	valid_0's l2: 291.311
+[3900]	valid_0's l2: 291.264
+[4000]	valid_0's l2: 291.221
+[4100]	valid_0's l2: 291.176
+[4200]	valid_0's l2: 291.104
+[4300]	valid_0's l2: 291.049
+[4400]	valid_0's l2: 291.035
+[4500]	valid_0's l2: 290.987
+[4600]	valid_0's l2: 290.994
+[4700]	valid_0's l2: 290.964
+[4800]	valid_0's l2: 290.928
+[4900]	valid_0's l2: 290.895
+[5000]	valid_0's l2: 290.846
+[5100]	valid_0's l2: 290.815
+[5200]	valid_0's l2: 290.776
+[5300]	valid_0's l2: 290.781
+[5400]	valid_0's l2: 290.73
+[5500]	valid_0's l2: 290.728
+[5600]	valid_0's l2: 290.69
+[5700]	valid_0's l2: 290.705
+[5800]	valid_0's l2: 290.694
+[5900]	valid_0's l2: 290.684
+[6000]	valid_0's l2: 290.676
+[6100]	valid_0's l2: 290.636
+[6200]	valid_0's l2: 290.614
+[6300]	valid_0's l2: 290.596
+[6400]	valid_0's l2: 290.583
+[6500]	valid_0's l2: 290.552
+[6600]	valid_0's l2: 290.484
+[6700]	valid_0's l2: 290.476
+[6800]	valid_0's l2: 290.504
+[6900]	valid_0's l2: 290.472
+[7000]	valid_0's l2: 290.447
+[7100]	valid_0's l2: 290.431
+[7200]	valid_0's l2: 290.423
+[7300]	valid_0's l2: 290.434
+[7400]	valid_0's l2: 290.422
+[7500]	valid_0's l2: 290.405
+[7600]	valid_0's l2: 290.398
+[7700]	valid_0's l2: 290.411
+[7800]	valid_0's l2: 290.41
+[7900]	valid_0's l2: 290.408
+[8000]	valid_0's l2: 290.418
+Early stopping, best iteration is:
+[7504]	valid_0's l2: 290.394
+Metrics:
+  model_rmse: 17.0409
+  baseline_rmse: 107.8985
+  n_valid_rows: 755491.0000
+  n_valid_wells: 154.0000
+  n_train_rows: 3000000.0000
+Wrote model to models/lightgbm_v5_3000k.joblib
+Wrote submission to submissions/lightgbm_v5_3000k.csv
+Wrote metrics to reports/model_results_v5.csv
