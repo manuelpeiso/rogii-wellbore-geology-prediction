@@ -1,0 +1,2 @@
+model_type,max_train_rows,stacking_rmse,baseline_rmse,n_valid_rows,n_valid_wells
+stacking_v7,3000000,14.507625823532912,107.2127561716862,377746.0,154.0

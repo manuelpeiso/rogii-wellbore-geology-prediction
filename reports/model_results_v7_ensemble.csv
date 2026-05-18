@@ -1,0 +1,2 @@
+model_type,max_train_rows,ensemble_rmse,baseline_rmse,n_valid_rows,n_valid_wells
+ensemble_v7,3000000,20.02566616908628,107.89849060565514,755491.0,154.0
